@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>profession</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css" type="text/css">
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+    <script src="../static/js/bootstrap.js" type="application/javascript"></script>
+
+
+</head>
+<body>
+<div class="container-fluid" style="text-align: center">
+
+    <ul class="list-group col-md-12 col-xs-12 col-lg-12 col-sm-12" th:each="schools:${school}">
+
+
+        <li class="list-group-item" th:text="${schools.school.name}"></li>
+
+    </ul>
+</div>
+
+</body>
+</html>
